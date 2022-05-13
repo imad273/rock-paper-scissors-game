@@ -148,7 +148,7 @@ section {
 
 .btn {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   right: 5px;
 }
 
@@ -164,7 +164,6 @@ section {
   letter-spacing: 3px;
   cursor: pointer;
 }
-
 
 .rules {
   position: absolute;
@@ -395,14 +394,37 @@ section {
     max-width: 90%;
   }
 
+  .choices .paper,
+  .choices .rock,
+  .choices .csrs {
+    padding: 22px 27px;
+  }
+
+  .choices .paper {
+    top: -50px;
+    left: -20px;
+  }
+
+  .choices .csrs {
+    top: -50px;
+    right: -20px;
+  }
+
+  .choices .rock {
+    bottom: -5px;
+  }
+
   .content .score {
     padding: 10px 20px;
   }
 
-  .choices .paper,
-  .choices .csrs,
-  .choices .rock {
-    padding: 25px 30px;
+  .result .res-content {
+    position: relative;
+  }
+
+  .result .jud {
+    position: absolute;
+    bottom: -60%;
   }
 
   .result .player-picked .csrs,
@@ -411,7 +433,13 @@ section {
   .result .house-picked .csrs,
   .result .house-picked .rock,
   .result .house-picked .paper {
-    padding: 20px 25px;
+    padding: 15px 20px;
+  }
+
+  .result .player-picked span {
+    font-size: 16px;
+    text-align: center;
+    margin: 13px 0px;
   }
 
   .result .player-picked span,
@@ -419,16 +447,5 @@ section {
     font-size: 16px;
     text-align: center;
   }
-
-  .result .jud span {
-    margin: 8px 0px;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: 2px;
-  }
-
-  .result .jud button {
-    padding: 8px 16px;
-    font-size: 15px;
-  }
+  
 }
