@@ -1,5 +1,5 @@
 // Rules popup
-let btn = document.getElementById("btn");
+let btn = document.getElementById("rul-btn");
 let popup = document.getElementById("rules-pupup");
 let close = document.getElementById("close");
 
@@ -61,7 +61,7 @@ for (let i = 0; i < choices.length; i++) {
     var result = document.getElementById("result");
     var playerPicked = document.querySelector(`.player-picked #${playerChoice}`);
     var computerPicked = document.querySelector(`.house-picked #${theChoice}`);
-
+    let rulBtn = document.getElementById("rul-btn");
 
     var currentScore = window.localStorage.getItem("score");
 
@@ -71,12 +71,14 @@ for (let i = 0; i < choices.length; i++) {
         result.style.display = "flex";
         playerPicked.style.display = "block";
         computerPicked.style.display = "block";
+        rulBtn.style.display = "none";
 
       } else if (order === "hide") {
         choicesContent.style.display = "flex";
         result.style.display = "none";
         playerPicked.style.display = "none";
         computerPicked.style.display = "none";
+        rulBtn.style.display = "block";
       }
     }
 
